@@ -36,7 +36,7 @@ with open(filename[:-4] + "_out.txt", "w") as output_file:
      with open(filename) as input_file:
           for line in input_file:
                parts = line.split(",")
-               if parts[0] is "student_id": continue
+               if parts[0] == "student_id":
                student_id = parts[0]
                total_grade = 0
                num_modules = 0
