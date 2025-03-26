@@ -42,9 +42,9 @@ with open(filename + "_out.csv", "w") as output_file:
                student_id = parts[0]
                total_grade = 0
                num_modules = 12
-               for i in range(1, 12):
+               for i in range(1, 13):
                     if len(parts[i]) == 0:
-                         num_modules = i - 2
+                         num_modules = i
                          break
                     else:
                          total_grade += int(parts[i])
