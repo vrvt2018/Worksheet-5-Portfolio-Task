@@ -69,4 +69,4 @@ with open(filename[:-4] + "_out.txt", "w") as output_file:
                elif average_grade < 40:
                     classification = "F"
                
-               output_file.write(f"{student_id},{average_grade:.2f},{classification}")
+               output_file.write(f"{student_id},{average_grade:.2f},{classification}\n")
