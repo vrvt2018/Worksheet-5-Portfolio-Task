@@ -44,7 +44,7 @@ with open(filename + "_out.csv", "w") as output_file:
                num_modules = 12
                for i in range(1, 12):
                     if len(parts[i]) == 0:
-                         num_modules = i
+                         num_modules = i - 2
                          break
                     else:
                          total_grade += int(parts[i])
