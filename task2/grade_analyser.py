@@ -41,13 +41,12 @@ with open(filename + "_out.csv", "w") as output_file:
                
                student_id = parts[0]
                total_grade = 0
-               num_modules = 12
-               for i in range(1, 12):
-                    if len(parts[i]) == 0:
-                         num_modules = i-2
-                         break
-                    else:
-                         total_grade += int(parts[i])
+               num_modules = 0
+               while parts[num_modules] != "" and i <= 12
+                    num_modules += 1
+               
+               for i in range(1, num_modules):
+                    total_grade += int(parts[i])
                
                average_grade = total_grade / num_modules
                classification = ""
