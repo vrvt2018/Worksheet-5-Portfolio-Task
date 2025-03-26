@@ -49,10 +49,6 @@ with open(filename + "_out.csv", "w") as output_file:
                     else:
                          total_grade += int(parts[i].strip())
                
-               print(parts)
-               print(num_modules)
-               print()
-               print()
                average_grade = total_grade / num_modules
                classification = ""
                """
