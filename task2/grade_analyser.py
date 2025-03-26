@@ -41,7 +41,7 @@ with open(filename[:-4] + "_out.txt", "w") as output_file:
                
                student_id = parts[0]
                total_grade = 0
-               num_modules = 0
+               num_modules = 12
                for i in range(1, 12):
                     if len(parts[i]) == 0:
                          num_modules = i - 1
