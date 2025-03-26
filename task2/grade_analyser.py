@@ -34,8 +34,9 @@ filename = input("Enter filename of student file: ")
 
 with open(filename[:-4] + "_out.txt", "w") as output_file:
      with open(filename) as input_file:
-          for line in input_file[1:]:
+          for line in input_file:
                parts = line.split(",")
+               if parts[0] is "student_id": continue
                student_id = parts[0]
                total_grade = 0
                num_modules = 0
