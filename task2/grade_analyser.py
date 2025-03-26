@@ -33,7 +33,7 @@ Your code will only be tested on valid files in the format shown in the 4 exampl
 filename = input("Enter filename of student file: ")
 
 with open(filename + "_out.csv", "w") as output_file:
-     with open(filename + ".csv") as input_file:
+     with open(filename) as input_file:
           for line in input_file:
                parts = line.split(",")
                if parts[0] == "student_id":
